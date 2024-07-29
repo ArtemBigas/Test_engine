@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QStackedWidget" name="stackedWidget">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="MainWindow" name="main"/>
+     <widget class="make_test" name="make"/>
+     <widget class="about_test" name="about"/>
+     <widget class="change_test" name="change"/>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>MainWindow</class>
+   <extends>QWidget</extends>
+   <header>mainwindow.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>make_test</class>
+   <extends>QWidget</extends>
+   <header>make_test.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>change_test</class>
+   <extends>QWidget</extends>
+   <header>change_test.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>about_test</class>
+   <extends>QWidget</extends>
+   <header>about_test.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
