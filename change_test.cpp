@@ -203,11 +203,11 @@ void change_test::on_Add_question_clicked()
 
           for (int j = 0; j < 3; ++j)
           {
-              QHBoxLayout *hLayout_aс = new QHBoxLayout;
-              hLayout_aс->addWidget(labels_ac[i][j]);//добавляем виджет label_q в  контейнер hLayout_q
-              hLayout_aс->addWidget(lineEdits_ac[i][j]);
-              hLayout_aс->addWidget(checks_ac[i][j]);
-              layout->addLayout(hLayout_aс);//добавляем контейнер в контейнер
+              QHBoxLayout *hLayout_ac = new QHBoxLayout;
+              hLayout_ac->addWidget(labels_ac[i][j]);//добавляем виджет label_q в  контейнер hLayout_q
+              hLayout_ac->addWidget(lineEdits_ac[i][j]);
+              hLayout_ac->addWidget(checks_ac[i][j]);
+              layout->addLayout(hLayout_ac);//добавляем контейнер в контейнер
 
           }
       }
@@ -270,11 +270,11 @@ void change_test::on_Delete_question_clicked()
 
              for (int j = 0; j < 3; ++j)
              {
-                 QHBoxLayout *hLayout_aс = new QHBoxLayout;
-                 hLayout_aс->addWidget(labels_ac[i][j]);//добавляем виджет label_q в  контейнер hLayout_q
-                 hLayout_aс->addWidget(lineEdits_ac[i][j]);
-                 hLayout_aс->addWidget(checks_ac[i][j]);
-                 layout->addLayout(hLayout_aс);//добавляем контейнер в контейнер
+                 QHBoxLayout *hLayout_ac = new QHBoxLayout;
+                 hLayout_ac->addWidget(labels_ac[i][j]);//добавляем виджет label_q в  контейнер hLayout_q
+                 hLayout_ac->addWidget(lineEdits_ac[i][j]);
+                 hLayout_ac->addWidget(checks_ac[i][j]);
+                 layout->addLayout(hLayout_ac);//добавляем контейнер в контейнер
 
              }
          }

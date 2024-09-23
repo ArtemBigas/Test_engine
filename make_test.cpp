@@ -4,6 +4,7 @@
 #include <QTextStream>
 #include <QFile>
 #include <QDir>
+#include <QMessageBox>
 make_test::make_test(QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::make_test)
@@ -31,6 +32,11 @@ void make_test::on_create_test_button_clicked()
     QLabel *instruction = new QLabel("Please mark the correct answer (there can only be one) on the right.");
     instruction->setFont(QFont("Purisa", 12));
     layout->addWidget(instruction);
+    if(num==0) {
+        QMessageBox::critical(this,
+                              tr("Error"),//tr-вызывается, чтобы (сообщение) стало переводимым
+                              tr("I need at least 1 question"));
+    }
     for (int i = 0; i < num; ++i)
     {
         QLabel *label_q = new QLabel(QString("Question %1").arg(i+1));
